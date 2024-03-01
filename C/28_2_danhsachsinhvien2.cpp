@@ -10,9 +10,10 @@ void nhapthongtin(struct SinhVien danhsach[],int n){
 	for(int i=0;i<n;i++){
 		printf("Nhap thong tin cho sinh vien %d: \n",i+1);
 		printf("Ten: ");
-		scanf("%s", danhsach[i].ten);
+		gets(danhsach[i].ten);
 		printf("Tuoi: ");
 		scanf("%d", &danhsach[i].tuoi);
+		getchar();
 	}
 }
 
@@ -57,11 +58,15 @@ void inSinhViencotuoihon20(struct SinhVien *danhsach,int n){
 }
 
 void timSinhVientheotuoi(struct SinhVien *danhsach,int n,int m){
-	printf("Sinh vien co tuoi la %d: ",m);
+	int check = 0;
 	for(int i=0;i<n;i++){
 		if(m == danhsach[i].tuoi){
 			printf("%s",danhsach[i].ten);
+			check++;
 		}
+	}
+	if(check == 0){
+		printf("Khong co sinh vien nao \n");
 	}
 }
 
@@ -69,15 +74,18 @@ int main(){
 	int n,m,luachon;
 	printf("Nhap so luong sinh vien:");
 	scanf("%d",&n);
+	getchar();
 	
 	struct SinhVien *danhsach = (struct SinhVien*)malloc(n*sizeof(struct SinhVien));
 	
 	nhapthongtin(danhsach,n);
 	
+	do {
 	printf("1.In ra sinh vien co tuoi lon nhat. \n");
 	printf("2.In ra sinh vien co ten dai nhat. \n");
 	printf("3.In ra danh sach sinh vien co tuoi lon hon 20. \n");
 	printf("4.Tim kiem sinh vien theo tuoi. \n");
+	printf("0.Ket thuc chuong trinh. \n");
 	printf("Nhap lua chon cua ban: ");
 	scanf("%d", &luachon);
 	
@@ -99,8 +107,12 @@ int main(){
 			timSinhVientheotuoi(danhsach,n,m);
 			}
 			break;
+		case 0:
+			printf("Chuong trinh ket thuc.");
+			break;
 		default:
 			printf("Lua chon khong hop le\n");
 			break;	
 	}
+	}while (luachon != 0);	
 }
