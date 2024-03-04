@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 float crystalTienDien(int soKWh){
 	float total;
 	if(soKWh < 50){
@@ -18,6 +17,6 @@ int main(){
 	int c=120;
 	
 	printf("Electricity bill for %d kWh is: %.0f dong \n",a,crystalTienDien(a));
-	printf("Electricity bill for %d kWh is: %.0f dong \n ",b,crystalTienDien(b));
+	printf("Electricity bill for %d kWh is: %.0f dong \n",b,crystalTienDien(b));
 	printf("Electricity bill for %d kWh is: %.0f dong \n",c,crystalTienDien(c));
 }
