@@ -1,0 +1,15 @@
+#id_name{
+    color: rgb(169, 224, 29);
+}
+#id_name:hover{
+    color: red;
+    font-size: 100px !important;
+    text-decoration: underline;
+}
+.class_name{
+    color: blue;
+}
+div {
+    color: red ;
+}
+
