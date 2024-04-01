@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Counter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #counter {
+        font-size: 24px;
+        padding: 5px 10px; /* Điều chỉnh padding để làm cho ô hiển thị số có cùng chiều cao với nút bấm */
+        border: 1px solid #ccc;
+        width: 100px;
+        display: inline-block;
+        margin-right: 10px;
+        height: 32px; /* Cùng chiều cao với nút bấm */
+    }
+    button {
+        padding: 0;
+        width: 30px;
+        height: 32px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <button id="decreaseBtn" onclick="decrease()">-</button>
+        <div id="counter">1</div>
+        <button id="increaseBtn" onclick="increase()">+</button>
+    </div>
+
+    <script>
+        var counterElement = document.getElementById('counter');
+
+        function increase() {
+            var currentValue = parseInt(counterElement.textContent);
+            counterElement.textContent = currentValue + 1;
+        }
+
+        function decrease() {
+            var currentValue = parseInt(counterElement.textContent);
+            if (currentValue > 1) {
+                counterElement.textContent = currentValue - 1;
+            }
+        }
+    </script>
+</body>
+</html>

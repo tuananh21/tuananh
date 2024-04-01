@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.write("Hello World");
+        console.log("Hello")
+        //khai bao bien
+        //var
+        var username = "T2401E";
+        console.log(username);
+        username=20;
+        console.log(username);
+        if (username == 20) {
+            var username = "fpt aptech";
+        }
+        var username = "Ha Noi";
+        console.log(username);
+
+        // //let
+        // let a = 10;
+        // if (a==10) {
+        //     let a = 20;
+        // }
+        // a = "T2401E";
+        // console.log(a);
+        // let c;
+        // console.log(c);
+
+        // //const
+        // const pi = 3.14;
+
+        // //operator
+        // a = 10;
+        // let b = "20";
+        // if ( a < b) {
+        //     console.log("gia tri cua a bang gia tri cua b");
+        //     console.log(typeof(a));
+        //     console.log(typeof(b));
+        // }
+
+        // c = a + b;
+        // console.log("gia tri cua c: "+c);
+
+        // c = a + parseInt(b);
+        // console.log("gia tri cua c: "+c);
+
+        // //toan tu 3 ngoi ? :
+        // c = a > 10 ? 20 : 50
+        // console.log("gia tri cua c: "+c);
+
+        // // alert("Hello World")
+        // let value = prompt("1234");
+        // console.log(value);
+
+        
+        // //loop
+        // let a = 10;
+        // while(a > 0){
+        //     console.log("gia tri cua a:"+a)
+        //     a--;
+        // }
+
+
+        // //array
+        // let arr1 = new Array(2);
+        // arr1[0] = 23;
+        // arr1[1] = "T2401E";
+        // console.log("Phan tu 1:" +arr1[0] , " Phan tu 2:" +arr1[1]);
+
+        // let arr2 = new Array("a", "b", "c");
+    
+
+        // //method
+        // let concatarr = arr1.concat(arr2);
+        //     console.log("concatarr index "+index +",value:"+item)
+        
+
+
+        function validationForm() {
+        let name = document.getElementById("nameid"),value;
+        console.log("name: " +name);
+        let nameError = document.getElementById("nameError");
+        nameError.style.display = block ;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="nameid">Name <span style="color: red;">*</span></label>
+        <input type="text" id="nameid"> </br>
+        <span style="color: red; display: none;">Nhap vap ten cua ban</span>
+        <button onclick="validationForm()">Submit</button>
+    </form>
+</body>
+
+</html>

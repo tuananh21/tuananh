@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam.css">
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <script src="exam.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Create Account</h2>
+            <p>Get started with your free account</p>
+        </div>
+        <div class="login">
+            <a href="" class="twitter-login">
+                <i class="fa-brands fa-twitter" style="margin-right: 10px;"></i>Login via Twitter
+            <a>
+            <a href="" class="facebook-login">
+                <i class="fa-brands fa-facebook" style="margin-right: 10px;"></i>Login via Facebook
+            <a>
+        </div>
+        
+
+        <div class="signin">
+            <div class="name">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                    <input type="text" class="username" required placeholder="Full Name" name="name">
+            </div>
+
+            <div class="email">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <input type="text" class="email-address" required placeholder="Email address" name="email">
+            </div>
+            <div class="phone">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <select name="phone-number" class="phonenumber-select">
+                    <option value="1">+84</option>
+                    <option value="2">+23</option>
+                </select>
+                <input type="text" required class="number" name="phone">
+            </div>
+            <div class="job">
+                <div class="icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <select class="job-select">
+                    <option selected="">Select Job Type</option>
+                    <option>Designer</option>
+                    <option value="">Manager</option>
+                    <option value="">Accounting</option>
+                </select>
+            </div>
+            <div class="password">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" class="first-password" required placeholder="Create password" name="password"> 
+            </div>
+            <div class="password">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" class="first-password" required placeholder="Repeat password" name="password"> 
+            </div>
+
+           
+            <button type="submit" class="submit-btn"> Create Account</button>
+
+            <p>Have an account?
+                <span>
+                    <a href="" class="login-btn">Log in</a>
+                </span>
+            </p>
+                
+            
+        </div>
+    </div>
+</body>
+</html>

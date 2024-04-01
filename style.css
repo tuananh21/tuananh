@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.content-1 {
+    background-image: url(/HTML-CSS-JS/img/background-banner.webp);
+    padding: 30px 0 50px;
+    background-size: cover;
+}
+
+.blog {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.content-blog {
+    background-color: white;
+    padding: 10px 20px 15px;
+    flex: 1; /* Phần khung vuông chiếm 1 phần */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-blog h3 span {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.a-title:hover{
+    color: green;
+}
+
+a:visited{
+    color: black;
+}
+
+.one {
+    height: unset;
+    max-height: 54px;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 9px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.side-blog {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.side-title {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 131.488px;
+    background-color: white;
+}
+
+.title {
+    font-size: 14px;
+}
+
+h3 {
+    margin: 0 !important;
+}
+
+.side-content {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}

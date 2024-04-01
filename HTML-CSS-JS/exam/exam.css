@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    margin-bottom: 50px;
+}
+
+.twitter-login {
+    border: 1px solid #1DA1F2;
+    border-radius: 5px;
+    background-color: #1DA1F2;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.facebook-login {
+    border: 1px solid #4267B2;
+    border-radius: 5px;
+    background-color: #4267B2;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.name, .email, .phone, .job, .password {
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.icon {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.username,.email-address,.job-select,.first-password {
+    width: calc(100% - 40px);
+}
+
+.phonenumber-select {
+    width: 100px;
+}
+
+.number {
+    width: calc(100% - 40px - 100px);
+}
+
+.submit-btn {
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 16px
+}
+
+.login-btn {
+    color: lightskyblue;
+}
+
+
