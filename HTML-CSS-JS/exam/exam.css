@@ -53,8 +53,12 @@ a {
     height: 40px;
     margin: 0 auto;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -99,5 +103,7 @@ a {
 .login-btn {
     color: lightskyblue;
 }
+
+
 
 

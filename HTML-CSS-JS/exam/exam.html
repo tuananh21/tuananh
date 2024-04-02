@@ -30,15 +30,21 @@
                     <div class="icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
-                        <input type="text" class="username" required placeholder="Full Name" name="name">
+                        <input type="text" class="username" placeholder="Full Name" id="username" onkeydown="removeError()">
+                
                 </div>
+
+                <span id="nameError" style="color: red;"></span></br>
 
                 <div class="email">
                     <div class="icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <input type="text" class="email-address" required placeholder="Email address" name="email">
+                    <input type="text" class="email-address" placeholder="Email address" id="email-address" onkeydown="removeError()">
                 </div>
+
+                <span id="emailError" style="color: red;"></span></br>
+
                 <div class="phone">
                     <div class="icon">
                         <i class="fa-solid fa-phone"></i>
@@ -47,34 +53,41 @@
                         <option value="1">+84</option>
                         <option value="2">+23</option>
                     </select>
-                    <input type="text" required class="number" name="phone">
+                    <input type="text" class="number" id="phone-number" onkeydown="removeError()">
                 </div>
+                <span id="phoneError" style="color: red;"></span></br>
                 <div class="job">
                     <div class="icon">
                         <i class="fa-solid fa-building"></i>
                     </div>
-                    <select class="job-select">
-                        <option selected="">Select Job Type</option>
-                        <option>Designer</option>
-                        <option value="">Manager</option>
-                        <option value="">Accounting</option>
+                    <select class="job-select" required>
+                        <option value="">Select Job Type</option>
+                        <option value="1">Designer</option>
+                        <option value="2">Manager</option>
+                        <option value="3">Accounting</option>
                     </select>
                 </div>
+
                 <div class="password">
                     <div class="icon">
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <input type="password" class="first-password" required placeholder="Create password" name="password"> 
-                </div>
-                <div class="password">
-                    <div class="icon">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <input type="password" class="first-password" required placeholder="Repeat password" name="password"> 
+                    <input type="password" class="first-password" placeholder="Create password" id="password" onkeydown="removeError()"> 
                 </div>
 
+                <span id="passwordError" style="color: red;"></span></br>
+
+                <div class="password">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <input type="password" class="first-password" placeholder="Repeat password" id="retype"> 
+                </div>
+
+                <span id="retypeError" style="color: red;"></span></br>
             
-                <button type="submit" class="submit-btn"> Create Account</button>
+                <button type="submit" class="submit-btn" onclick="return validateForm()"> Create Account</button>
+                
             </form>
             <p>Have an account?
                 <span>
@@ -85,5 +98,8 @@
             
         </div>
     </div>
+
+
+    
 </body>
 </html>
