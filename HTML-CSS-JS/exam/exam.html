@@ -25,56 +25,57 @@
         
 
         <div class="signin">
-            <div class="name">
-                <div class="icon">
-                    <i class="fa-solid fa-user"></i>
+            <form action="">
+                <div class="name">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                        <input type="text" class="username" required placeholder="Full Name" name="name">
                 </div>
-                    <input type="text" class="username" required placeholder="Full Name" name="name">
-            </div>
 
-            <div class="email">
-                <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="email">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <input type="text" class="email-address" required placeholder="Email address" name="email">
                 </div>
-                <input type="text" class="email-address" required placeholder="Email address" name="email">
-            </div>
-            <div class="phone">
-                <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
+                <div class="phone">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <select name="phone-number" class="phonenumber-select">
+                        <option value="1">+84</option>
+                        <option value="2">+23</option>
+                    </select>
+                    <input type="text" required class="number" name="phone">
                 </div>
-                <select name="phone-number" class="phonenumber-select">
-                    <option value="1">+84</option>
-                    <option value="2">+23</option>
-                </select>
-                <input type="text" required class="number" name="phone">
-            </div>
-            <div class="job">
-                <div class="icon">
-                    <i class="fa-solid fa-building"></i>
+                <div class="job">
+                    <div class="icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <select class="job-select">
+                        <option selected="">Select Job Type</option>
+                        <option>Designer</option>
+                        <option value="">Manager</option>
+                        <option value="">Accounting</option>
+                    </select>
                 </div>
-                <select class="job-select">
-                    <option selected="">Select Job Type</option>
-                    <option>Designer</option>
-                    <option value="">Manager</option>
-                    <option value="">Accounting</option>
-                </select>
-            </div>
-            <div class="password">
-                <div class="icon">
-                    <i class="fa-solid fa-lock"></i>
+                <div class="password">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <input type="password" class="first-password" required placeholder="Create password" name="password"> 
                 </div>
-                <input type="password" class="first-password" required placeholder="Create password" name="password"> 
-            </div>
-            <div class="password">
-                <div class="icon">
-                    <i class="fa-solid fa-lock"></i>
+                <div class="password">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <input type="password" class="first-password" required placeholder="Repeat password" name="password"> 
                 </div>
-                <input type="password" class="first-password" required placeholder="Repeat password" name="password"> 
-            </div>
 
-           
-            <button type="submit" class="submit-btn"> Create Account</button>
-
+            
+                <button type="submit" class="submit-btn"> Create Account</button>
+            </form>
             <p>Have an account?
                 <span>
                     <a href="" class="login-btn">Log in</a>
