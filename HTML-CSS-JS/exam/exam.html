@@ -22,6 +22,8 @@
                 <i class="fa-brands fa-facebook" style="margin-right: 10px;"></i>Login via Facebook
             <a>
         </div>
+
+        <hr  width="400px" style="margin-bottom: 20px"/>
         
 
         <div class="signin">
@@ -40,7 +42,7 @@
                     <div class="icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <input type="text" class="email-address" placeholder="Email address" id="email-address" onkeydown="removeError()">
+                    <input type="text" class="email-address" placeholder="Email address" id="email-address" onblur="removeError()">
                 </div>
 
                 <span id="emailError" style="color: red;"></span></br>
@@ -89,6 +91,7 @@
                 <button type="submit" class="submit-btn" onclick="return validateForm()"> Create Account</button>
                 
             </form>
+            
             <p>Have an account?
                 <span>
                     <a href="" class="login-btn">Log in</a>

@@ -5,30 +5,61 @@ function validateForm() {
     let password = document.getElementById("password").value;
     let retype = document.getElementById("retype").value;
 
-    if (name == "") {
-        let nameError = document.getElementById("nameError");
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let phoneError = document.getElementById("phoneError");
+    let passwordError = document.getElementById("passwordError");
+    let retypeError = document.getElementById("retypeError");
+
+    // if (name == "") {
+    //     let nameError = document.getElementById("nameError");
+    //     nameError.innerText = "Vui long nhap vao ten cua ban";
+    //     // return false;
+    // } else if (email.indexOf('@') == -1) {
+	// 	let emailError = document.getElementById("emailError");
+    //     emailError.innerText = "Vui long nhap dung dia chi email!";
+    //     // return false;
+	// } else  if (phone == "") {
+    //     let phoneError = document.getElementById("phoneError");
+    //     phoneError.innerText = "Vui long nhap vao SDT cua ban";
+    //     // return false;
+    // } else if (password == "") {
+    //     let passwordError = document.getElementById("passwordError");
+    //     passwordError.innerText = "Vui long nhap vao mat khau";
+    //     // return false;
+    // } else if ( retype != password) {
+    //     let retypeError = document.getElementById("retypeError");
+    //     retypeError.innerText = "Mat khau khong trung khop";
+    //     // return false;
+    // } else {
+    //     return true;
+    // }
+
+    if (name == "" ) { 
         nameError.innerText = "Vui long nhap vao ten cua ban";
-        return false;
-    } else if (email.indexOf('@') == -1) {
-		let emailError = document.getElementById("emailError");
+    } 
+
+    if (email.indexOf('@') == -1) {
         emailError.innerText = "Vui long nhap dung dia chi email!";
-        return false;
-	} else  if (phone == "") {
-        let phoneError = document.getElementById("phoneError");
+    } 
+
+    if (phone == "") {
         phoneError.innerText = "Vui long nhap vao SDT cua ban";
-        return false;
-    } else if (password == "") {
-        let passwordError = document.getElementById("passwordError");
-        passwordError.innerText = "Vui long nhap vao mat khau";
-        return false;
-    } else if ( password != retype) {
-        let retypeError = document.getElementById("retypeError");
+    } 
+
+    if (password.length < 6) {
+        passwordError.innerText = "Mat khau phai co it nhat 6 ki tu";
+    } 
+
+    if (retype != password) {
         retypeError.innerText = "Mat khau khong trung khop";
         return false;
-    } else {
-        return true;
-    }
+    } 
+
+
+
 }
+
 
 function removeError() {
     let name = document.getElementById("username").value;
@@ -41,7 +72,7 @@ function removeError() {
         nameError.innerText = "";
     }
 
-    if (email.indexOf('@') == 0){
+    if (email.includes('@') ) {
         let emailError = document.getElementById("emailError");
         emailError.innerText = "";
     }
