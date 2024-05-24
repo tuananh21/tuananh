@@ -92,7 +92,7 @@ exec GetStudentsByClassAndSubject @class_id = 1,@subject =N'Toán'
  select 
 	s.*,
 	c.c_name as class_name,
-	t.*
+	t.t_firstname+ ' ' + t.t_lastname as teacher_in_charge
 from students s
  join classes c on s.class_id = c.class_id
  join teachers t  on t.teacher_id = c.teacher_id 
